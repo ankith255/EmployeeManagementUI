@@ -1,4 +1,18 @@
-<app-header></app-header>
-<p>landing-page works!</p>
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link active"  [routerLink]="['/landing-page']"> Landing Page </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link"  [routerLink]="['/attendance-management']"> Attendence Management </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/landing-page']"> leaves </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/home']"> payroll</a>
+    </li>
+
+</ul>
+
+<h1>landing page</h1>
 <router-outlet></router-outlet>
-<app-footer></app-footer>

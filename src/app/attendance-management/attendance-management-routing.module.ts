@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AttendanceManagementComponent } from './attendance-management.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: "", component: AttendanceManagementComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
