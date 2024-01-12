@@ -18,6 +18,10 @@ const routes: Routes = [
       loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
   },
   {
+    path: 'timesheet',
+    loadChildren: () => import('./attendance-management/attendance-management.module').then(m => m.AttendanceManagementModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
 }
