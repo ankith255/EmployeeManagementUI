@@ -3,11 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { LandingPageModule } from './landing-page/landing-page.module';
 import { HomeModule } from './home/home.module';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {
       path: 'login',
       component: LoginComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
   },
   {
       path: 'landing-page',
