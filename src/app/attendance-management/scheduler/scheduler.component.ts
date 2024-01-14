@@ -10,8 +10,6 @@ export class SchedulerComponent implements AfterViewInit {
 
   @ViewChild('scheduler')
   scheduler!: SchedulerComponent;
-
-  
    
   constructor(private ds: DataService) {
   }

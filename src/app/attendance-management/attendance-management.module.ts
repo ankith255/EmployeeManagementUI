@@ -4,19 +4,21 @@ import { CommonModule } from '@angular/common';
 import { AttendanceManagementRoutingModule } from './attendance-management-routing.module';
 import { AttendanceManagementComponent } from './attendance-management.component';
 import { TimesheetComponent } from './timesheet/timesheet.component';
-import { SchedulerComponentComponent } from './scheduler-component/scheduler-component.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { SchedulerComponent } from './scheduler/scheduler.component';
 
 
 @NgModule({
   declarations: [
     AttendanceManagementComponent,
-    TimesheetComponent,
-    SchedulerComponentComponent,
-    SchedulerComponent
+    SchedulerComponent,
+    TimesheetComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    HttpClientModule,
     AttendanceManagementRoutingModule
   ]
 })
